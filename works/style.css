@@ -1,0 +1,122 @@
+body {
+    font-size: 14px;
+    color: black;
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hd-logo {
+    width: 120px;
+    padding: 10px 0;
+}
+
+.hd-logo a {
+    display: block;
+}
+
+.section-title {
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 60px;
+    border-bottom: solid 1px black;
+}
+
+.con-title {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto 100px;
+    padding: 0 4%;
+    text-align: center;
+}
+
+/* ヘッダー */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+#header ul {
+    display: flex;
+    padding: 10px 0;
+}
+#header li {
+    margin-left: 30px;
+}
+#header li a:hover {
+    opacity: 0.5
+}
+
+/* メインビジュアル */
+#main-img {
+    margin-bottom: 80px;
+}
+#main-img img {
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    object-fit: cover;
+}
+
+#about .about-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+#about .about-text {
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    #about .about-con {
+        flex-direction: column;
+    }
+    #about img {
+        margin-right: 0;
+    }
+}
+
+
+/* bicycle */
+#bicycle ul {
+    display: flex;
+    justify-content: space-between;
+}
+#bicycle li {
+    width: 32%;
+}
+
+@media screen and (max-width: 600px) {
+    #bicycle ul {
+        flex-direction: column;
+    }
+    #bicycle li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+/* footer */
+#footer {
+    font-size: 8px;
+    padding: 10px 0;
+    text-align: center;
+}
